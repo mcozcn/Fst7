@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { WorkoutCard } from "@/components/WorkoutCard";
 import { CategoryCard } from "@/components/CategoryCard";
-import { Play, Target, Trophy, Zap } from "lucide-react";
+import { Play, Target, Trophy, Zap, BookOpen } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 
 import fitnessHero from "@/assets/fitness-hero.jpg";
 import strengthIcon from "@/assets/strength-icon.jpg";
@@ -57,14 +58,16 @@ const Index = () => {
               <Play className="w-5 h-5 mr-2" />
               Hemen Başla
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20"
-            >
-              <Target className="w-5 h-5 mr-2" />
-              Hedef Belirle
-            </Button>
+            <Link to="/programs">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20"
+              >
+                <BookOpen className="w-5 h-5 mr-2" />
+                Antrenman Programları
+              </Button>
+            </Link>
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
