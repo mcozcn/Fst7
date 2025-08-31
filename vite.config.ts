@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // GitHub Pages deployment için base path
+  base: process.env.NODE_ENV === 'production' ? '/fit-buddy-forge-87/' : '/',
   server: {
     host: "::",
     port: 8080,
