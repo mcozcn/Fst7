@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# 🏋️ Fit Buddy Forge - Fitness Antrenman Uygulaması
 
-## Project info
+Modern ve motive edici bir fitness antrenman uygulaması. 3 fazlı detaylı antrenman programları ile kas gelişimi ve kuvvet artışı hedefleyen kapsamlı bir fitness rehberi.
 
-**URL**: https://lovable.dev/projects/5734511d-2635-4eec-9c8b-d2b3eb987574
+## ✨ Özellikler
 
-## How can I edit this code?
+- **3 Fazlı Antrenman Programı**: Adaptasyon, Gelişim ve Zirve fazları
+- **Detaylı Egzersiz Kartları**: Her egzersiz için kurulum, hareket, tempo ve alternatifler
+- **İnteraktif Arayüz**: Kolay kullanım için genişletilebilir/daraltılabilir egzersiz detayları
+- **Responsive Tasarım**: Tüm cihazlarda mükemmel görüntü
+- **Modern UI/UX**: Motivasyon artırıcı renkler ve animasyonlar
 
-There are several ways of editing your application.
+## 🎯 Antrenman Fazları
 
-**Use Lovable**
+### Faz 1 - Adaptasyon (Hafta 1-4)
+- Hareket formunu güçlendirme
+- Kas-iskelet sistemi stabilizasyonu
+- Kontrollü ağırlık artışı
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5734511d-2635-4eec-9c8b-d2b3eb987574) and start prompting.
+### Faz 2 - Gelişim (Hafta 5-8)
+- Volume artışı
+- Kas hipertrofisi
+- Güç geliştirme
 
-Changes made via Lovable will be committed automatically to this repo.
+### Faz 3 - Zirve (Hafta 9-12)
+- Maksimum güç odağı
+- Yüksek yoğunluk
+- Peaking protokolleri
 
-**Use your preferred IDE**
+## 🚀 Canlı Demo
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+[Uygulamayı Dene](https://lovable.dev/projects/5734511d-2635-4eec-9c8b-d2b3eb987574)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Teknolojiler
 
-Follow these steps:
+- **React 18** - Modern UI kütüphanesi
+- **TypeScript** - Tip güvenli JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Hızlı geliştirme ortamı
+- **shadcn/ui** - Modern UI bileşenleri
+- **Lucide React** - Modern ikonlar
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📦 Kurulum
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Gereksinimler
+- Node.js 18+ 
+- npm veya yarn
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Adımlar
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+# Repo'yu klonla
+git clone https://github.com/username/fit-buddy-forge.git
+
+# Proje dizinine git
+cd fit-buddy-forge
+
+# Bağımlılıkları yükle
+npm install
+
+# Geliştirme sunucusunu başlat
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Uygulama `http://localhost:8080` adresinde açılacaktır.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📱 Kullanım
 
-**Use GitHub Codespaces**
+1. **Ana Sayfa**: Fitness kategorileri ve öne çıkan antrenmanları görüntüle
+2. **Antrenman Programları**: 3 fazlı detaylı programlara eriş
+3. **Egzersiz Detayları**: Her egzersiz için kapsamlı bilgilere ulaş
+4. **Faz Seçimi**: İhtiyacına göre uygun fazı seç
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🏗️ Build ve Deploy
 
-## What technologies are used for this project?
+```bash
+# Production build
+npm run build
 
-This project is built with:
+# Build önizleme
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🤝 Katkıda Bulunma
 
-## How can I deploy this project?
+1. Bu repo'yu fork edin
+2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
+4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
+5. Pull Request oluşturun
 
-Simply open [Lovable](https://lovable.dev/projects/5734511d-2635-4eec-9c8b-d2b3eb987574) and click on Share -> Publish.
+## 📄 Lisans
 
-## Can I connect a custom domain to my Lovable project?
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
-Yes, you can!
+## 📞 İletişim
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Proje sahibi - [@username](https://github.com/username)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Proje Linki: [https://github.com/username/fit-buddy-forge](https://github.com/username/fit-buddy-forge)
+
+---
+
+⭐ Bu projeyi beğendiyseniz yıldızlamayı unutmayın!
