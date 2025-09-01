@@ -1,8 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "fit-buddy-forge",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mcozcn.github.io/Fst7-main",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
