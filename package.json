@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mcozcn.github.io/Fst7-main",
+  "homepage": "https://mcozcn.github.io/Fst7",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -28,8 +28,8 @@ A modern fitness and workout companion app built with React, TypeScript, and Tai
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[YOUR_USERNAME]/Fst7-main.git
-cd Fst7-main
+git clone https://github.com/mcozcn/Fst7.git
+cd Fst7
 ```
 
 2. Install dependencies:
@@ -74,4 +74,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Live Demo
 
-Visit the live application: [https://[YOUR_USERNAME].github.io/Fst7-main](https://[YOUR_USERNAME].github.io/Fst7-main)
+Visit the live application: [https://mcozcn.github.io/Fst7](https://mcozcn.github.io/Fst7)
