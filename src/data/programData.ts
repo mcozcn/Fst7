@@ -15,7 +15,7 @@ export const fitnessProgram: FitnessProgram = {
   ],
   goals: [
     "Maksimum kas hipertrofisi",
-    "FST-7 teknikleri ile pompaj",
+    "FST-7 teknikleri ile gelişim",
     "Form öncelikli antrenman",
     "Progresif ağırlık artışı",
     "Optimal toparlanma"
@@ -34,7 +34,7 @@ export const fitnessProgram: FitnessProgram = {
           reps: "8-12",
           rest: "60-90 sn",
           tempo: "Kontrollü",
-          setup: "30° incline, barı göğüse indir, göğüsle it, tam ROM",
+          setup: "30° incline, barı göğüse indir, göğüs hizasından it, tam ROM",
           movement: "Barı göğüs hizasına kontrollü indir, göğüs kaslarını sıkarak yukarı it",
           commonMistakes: "Omuz yüklenmesin, bel kavisli olmasın",
           alternatives: "Dumbbell Incline Press"
@@ -81,10 +81,10 @@ export const fitnessProgram: FitnessProgram = {
           sets: "7",
           reps: "8-12",
           rest: "30-45 sn",
-          tempo: "Pompayı hisset",
+          tempo: "metabolik stresi tetikle",
           setup: "Orta kablo, göğüsü sık",
-          movement: "Kolları göğüs önünde birleştir, pompaj hissini yaşa",
-          commonMistakes: "Pompayı hisset",
+          movement: "Kolları göğüs önünde birleştir, metabolik stresi tetikle",
+          commonMistakes: "metabolik stresi tetikle",
           alternatives: "Dumbbell Flyes (yatay bank)"
         }
       ]
@@ -173,9 +173,9 @@ export const fitnessProgram: FitnessProgram = {
           sets: "7",
           reps: "10-12",
           rest: "30-45 sn",
-          tempo: "Pompala",
-          setup: "Oturarak, boyun arkasına indir, pompala",
-          movement: "Barı boyun arkasından yukarı doğru it, pompaj hissini yaşa",
+          tempo: "metabolik stresi tetikle",
+          setup: "Oturarak, boyun arkasına indir, ",
+          movement: "Barı boyun arkasından yukarı doğru it, metabolik stresi tetikle",
           commonMistakes: "Omuz mobilitesine dikkat",
           alternatives: "Machine Shoulder Press"
         }
@@ -242,7 +242,7 @@ export const fitnessProgram: FitnessProgram = {
           reps: "10-12",
           rest: "30-45 sn",
           tempo: "2 sn bekle",
-          setup: "Düz kol, lat'leri esnet, pompala",
+          setup: "Düz kol, lat'leri esnet, metabolik stresi tetikle",
           movement: "Düz kollarla kabloyu aşağı çek, lat kaslarını esnet",
           commonMistakes: "Göğüs altına çek",
           alternatives: "IYT Raises"
@@ -298,7 +298,7 @@ export const fitnessProgram: FitnessProgram = {
           reps: "10",
           rest: "30-45 sn",
           tempo: "Tam esnet",
-          setup: "Overhead, tam esnet, uzun başı pompala",
+          setup: "Overhead, tam esnet, uzun baş için  metabolik stresi tetikle",
           movement: "Kabloyu baş üstünden aşağı doğru it, triceps uzun başını sık",
           commonMistakes: "Omuz yüklenme yok",
           alternatives: "Dumbbell Overhead Extensions"
@@ -345,9 +345,9 @@ export const fitnessProgram: FitnessProgram = {
           sets: "7",
           reps: "10",
           rest: "30-45 sn",
-          tempo: "Pompala",
-          setup: "Ayakta, pompala",
-          movement: "EZ-Bar'ı kontrollü şekilde kaldır, biceps pompajını yaşa",
+          tempo: "metabolik stresi tetikle",
+          setup: "Ayakta, metabolik stresi tetikle",
+          movement: "EZ-Bar'ı kontrollü şekilde kaldır, biceps metabolik stresi tetikle",
           commonMistakes: "Form bozulmasın",
           alternatives: "Cable Curls"
         }
@@ -413,9 +413,9 @@ export const fitnessProgram: FitnessProgram = {
           sets: "7",
           reps: "10",
           rest: "30-45 sn",
-          tempo: "Pompala",
-          setup: "Ayak orta, pompala",
-          movement: "Bacakları bük ve düzleştir, quad pompajını yaşa",
+          tempo: "metabolik stresi tetikle",
+          setup: "Ayak orta, metabolik stresi tetikle",
+          movement: "Bacakları bük ve düzleştir, quad metabolik stresi tetikle",
           commonMistakes: "Diz kilitleme yok",
           alternatives: "Goblet Squats"
         },
@@ -449,9 +449,9 @@ export const fitnessProgram: FitnessProgram = {
           sets: "7",
           reps: "10",
           rest: "30-45 sn",
-          tempo: "Pompala",
-          setup: "Oturarak, pompala",
-          movement: "Bacakları bük, hamstring pompajını yaşa",
+          tempo: "metabolik stresi tetikle",
+          setup: "Oturarak, metabolik stresi tetikle",
+          movement: "Bacakları bük, hamstring metabolik stresi tetikle",
           commonMistakes: "Hafif kilo",
           alternatives: "Nordic Hamstring Curls"
         }
@@ -461,7 +461,7 @@ export const fitnessProgram: FitnessProgram = {
   notes: {
     rir: "Normal setlerde 1-2, FST-7 setlerinde 0-1",
     progression: "Her hafta ağırlık veya tekrar artır",
-    fst7: "FST-7 setlerinde 30-45 sn dinlenme, pompaj hissini yaşa",
+    fst7: "FST-7 setlerinde 30-45 sn dinlenme,metabolik stresi tetikle",
     restBetween: "Normal setlerde 60-90 sn, FST-7 setlerinde 30-45 sn",
     additional: "Isınma: Her seansta 5-10 dk hafif kardiyo + hareket için 1-2 hafif set. Beslenme: Protein 1.6-2.2 g/kg, kalori surplus, 7-9 saat uyku. Dikkat: Form öncelikli, ağrı olursa dur, overtraining'e dikkat."
   }
