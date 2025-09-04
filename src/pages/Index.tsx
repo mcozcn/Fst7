@@ -42,7 +42,7 @@ const Index = () => {
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Fit<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-glow to-accent">ness</span> Journey
+            Fit<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-glow to-accent">ness</span> Journey with McO
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto">
             Hedeflerinize ulaşın, sınırlarınızı aşın ve en iyi versiyonunuz olun!
