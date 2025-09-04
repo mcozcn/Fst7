@@ -41,5 +41,14 @@ export interface FitnessProgram {
   id: string;
   name: string;
   description: string;
-  phases: ProgramPhase[];
+  weeklySchedule: string[];
+  goals: string[];
+  workoutDays: WorkoutDay[];
+  notes: {
+    rir: string;
+    progression: string;
+    fst7: string;
+    restBetween: string;
+    additional?: string;
+  };
 }

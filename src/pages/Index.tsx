@@ -130,6 +130,17 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link to="/programs">
+              <WorkoutCard
+                title="FST-7 Bodybuilding"
+                description="Profesyonel bodybuilding programı"
+                duration="5 gün/hafta"
+                difficulty="İleri"
+                participants="1.2K+"
+                image={strengthIcon}
+                onStart={() => {}}
+              />
+            </Link>
             <WorkoutCard
               title="HIIT Cardio Blast"
               description="Yoğun interval antrenmanı"
@@ -138,15 +149,6 @@ const Index = () => {
               participants="2.4K+"
               image={cardioIcon}
               onStart={() => handleStartWorkout("HIIT Cardio Blast")}
-            />
-            <WorkoutCard
-              title="Full Body Strength"
-              description="Tüm vücut güç antrenmanı"
-              duration="45 dk"
-              difficulty="İleri"
-              participants="1.8K+"
-              image={strengthIcon}
-              onStart={() => handleStartWorkout("Full Body Strength")}
             />
             <WorkoutCard
               title="Morning Yoga Flow"

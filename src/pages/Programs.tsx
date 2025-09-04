@@ -1,18 +1,17 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ProgramPhase } from "@/components/ProgramPhase";
-import { BookOpen, Target, TrendingUp, Clock, ArrowLeft } from "lucide-react";
-import { fitnessProgram } from "@/data/programData";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { WorkoutDay } from "@/components/WorkoutDay";
+import { ArrowLeft, Calendar, Target, TrendingUp, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import { fitnessProgram } from "@/data/programData";
 
 const Programs = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <section className="bg-gradient-hero py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex items-center gap-4 mb-6">
+      {/* Hero Section */}
+      <section className="bg-gradient-primary text-white py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-4 mb-8">
             <Link to="/">
               <Button variant="outline" size="sm" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
                 <ArrowLeft className="w-4 h-4 mr-2" />
@@ -21,74 +20,76 @@ const Programs = () => {
             </Link>
           </div>
           
-          <div className="text-white text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Antrenman <span className="text-primary-glow">Programları</span>
-            </h1>
-            <p className="text-xl mb-6 opacity-90 max-w-2xl mx-auto">
-              Profesyonel fitness programları ile hedeflerinize ulaşın
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl font-bold mb-6">{fitnessProgram.name}</h1>
+              <p className="text-xl mb-8 opacity-90">{fitnessProgram.description}</p>
+              
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-2xl font-bold mb-1">5</div>
+                  <div className="text-sm opacity-80">Antrenman Günü</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold mb-1">2</div>
+                  <div className="text-sm opacity-80">Dinlenme Günü</div>
+                </div>
+              </div>
+            </div>
             
-            <div className="flex flex-wrap justify-center gap-4">
-              <Badge variant="secondary" className="text-lg px-4 py-2 bg-white/20 text-white border-white/30">
-                <Clock className="w-4 h-4 mr-2" />
-                12 Hafta
-              </Badge>
-              <Badge variant="secondary" className="text-lg px-4 py-2 bg-white/20 text-white border-white/30">
-                <Target className="w-4 h-4 mr-2" />
-                3 Faz
-              </Badge>
-              <Badge variant="secondary" className="text-lg px-4 py-2 bg-white/20 text-white border-white/30">
-                <TrendingUp className="w-4 h-4 mr-2" />
-                Progresif
-              </Badge>
+            <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold mb-4">Haftalık Program</h3>
+              <div className="space-y-2">
+                {fitnessProgram.weeklySchedule.map((day, index) => (
+                  <div key={index} className="flex items-center gap-3 text-sm">
+                    <Calendar className="w-4 h-4" />
+                    <span>{day}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Program Overview */}
-      <section className="py-12 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <Card variant="feature" className="mb-8">
+          <Card className="mb-12">
             <CardHeader>
-              <div className="flex items-center gap-3">
-                <BookOpen className="w-8 h-8 text-primary" />
-                <div>
-                  <CardTitle className="text-2xl">{fitnessProgram.name}</CardTitle>
-                  <p className="text-muted-foreground">{fitnessProgram.description}</p>
-                </div>
-              </div>
+              <CardTitle className="text-2xl">{fitnessProgram.name}</CardTitle>
+              <CardDescription className="text-lg">{fitnessProgram.description}</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-4 bg-primary/5 rounded-lg">
-                  <div className="text-3xl font-bold text-primary mb-2">Faz 1</div>
-                  <div className="text-sm font-medium mb-1">Adaptasyon</div>
-                  <div className="text-xs text-muted-foreground">Hafta 1-4</div>
+                <div className="text-center p-4 bg-muted rounded-lg">
+                  <Target className="w-8 h-8 mx-auto mb-3 text-primary" />
+                  <h3 className="font-semibold mb-2">Hedefler</h3>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    {fitnessProgram.goals.map((goal, index) => (
+                      <li key={index}>• {goal}</li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="text-center p-4 bg-secondary/5 rounded-lg">
-                  <div className="text-3xl font-bold text-secondary mb-2">Faz 2</div>
-                  <div className="text-sm font-medium mb-1">Gelişim</div>
-                  <div className="text-xs text-muted-foreground">Hafta 5-8</div>
+                <div className="text-center p-4 bg-muted rounded-lg">
+                  <TrendingUp className="w-8 h-8 mx-auto mb-3 text-primary" />
+                  <h3 className="font-semibold mb-2">Progression</h3>
+                  <p className="text-sm text-muted-foreground">{fitnessProgram.notes.progression}</p>
                 </div>
-                <div className="text-center p-4 bg-accent/5 rounded-lg">
-                  <div className="text-3xl font-bold text-accent mb-2">Faz 3</div>
-                  <div className="text-sm font-medium mb-1">Doruk</div>
-                  <div className="text-xs text-muted-foreground">Hafta 9-12</div>
+                <div className="text-center p-4 bg-muted rounded-lg">
+                  <Users className="w-8 h-8 mx-auto mb-3 text-primary" />
+                  <h3 className="font-semibold mb-2">FST-7 Tekniği</h3>
+                  <p className="text-sm text-muted-foreground">{fitnessProgram.notes.fst7}</p>
                 </div>
               </div>
             </CardContent>
           </Card>
 
-          {/* Program Phases */}
-          <div className="space-y-8">
-            {fitnessProgram.phases.map((phase, index) => (
-              <ProgramPhase 
-                key={phase.id} 
-                phase={phase} 
-                phaseNumber={index + 1} 
-              />
+          {/* Workout Days */}
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-center mb-8">Antrenman Günleri</h2>
+            {fitnessProgram.workoutDays.map((workoutDay) => (
+              <WorkoutDay key={workoutDay.id} workoutDay={workoutDay} />
             ))}
           </div>
         </div>
@@ -97,20 +98,29 @@ const Programs = () => {
       {/* CTA Section */}
       <section className="py-16 px-4 bg-muted/50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Programa Başlamaya Hazır mısınız?</h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Sistematik yaklaşım ile fitness hedeflerinize ulaşın
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              <Target className="w-5 h-5 mr-2" />
-              Programa Başla
-            </Button>
-            <Link to="/">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-                Ana Sayfaya Dön
+          <div className="bg-gradient-primary rounded-3xl p-12 text-white">
+            <h2 className="text-4xl font-bold mb-4">Programa Başlamaya Hazır mısın?</h2>
+            <p className="text-xl mb-8 opacity-90">
+              FST-7 tekniği ile kas hipertrofisini maksimize et ve hedeflerine ulaş!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                variant="secondary" 
+                size="lg"
+                className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90"
+              >
+                Programa Başla
               </Button>
-            </Link>
+              <Link to="/">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white/10"
+                >
+                  Ana Sayfaya Dön
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
