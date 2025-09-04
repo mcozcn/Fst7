@@ -11,13 +11,13 @@ export const fitnessProgram: FitnessProgram = {
       title: "FST-7 Bodybuilding Programı",
       description: "Haftalık dağılım ile profesyonel bodybuilding antrenman programı. FST-7 teknikleri ile maksimum kas hipertrofisi hedeflenir.",
       weeklySchedule: [
-        "Pzt: Göğüs (16-20 set)",
-        "Sal: Omuz (20-25 set)", 
-        "Çrş: Sırt (16-20 set)",
-        "Prş: Kol (Triceps + Biceps, 26-32 set)",
-        "Cum: Bacak (19-22 set)",
-        "Cts: Dinlenme",
-        "Paz: Dinlenme"
+        "Pazartesi: Göğüs (16-20 set)",
+        "Salı: Omuz (20-25 set)", 
+        "Çarşamba: Sırt (16-20 set)",
+        "Perşembe: Kol (Triceps + Biceps, 26-32 set)",
+        "Cuma: Bacak (19-22 set)",
+        "Cumartesi: Dinlenme",
+        "Pazar: Dinlenme"
       ],
       goals: [
         "Maksimum kas hipertrofisi",
@@ -29,7 +29,7 @@ export const fitnessProgram: FitnessProgram = {
       workoutDays: [
         {
           id: "chest-day",
-          name: "Göğüs Günü",
+          name: "Pazartesi",
           title: "Göğüs (16-20 set)",
           description: "En etkili hareketler: Bench press ve dips (yüksek pectoralis aktivasyonu), flyes izolasyon için",
           exercises: [
@@ -93,15 +93,11 @@ export const fitnessProgram: FitnessProgram = {
               commonMistakes: "Pompayı hisset",
               alternatives: "Dumbbell Flyes (yatay bank)"
             }
-          ],
-          coreAndCardio: [
-            "Isınma: 5-10 dk hafif kardiyo + hareket için 1-2 hafif set",
-            "Dinlenme: Normal setlerde 60-90 sn, FST-7 setlerinde 30-45 sn"
           ]
         },
         {
           id: "shoulder-day",
-          name: "Omuz Günü",
+          name: "Salı",
           title: "Omuz (20-25 set)",
           description: "En etkili: Overhead press (ön), lateral raises (yan), reverse flyes (arka) için yüksek EMG",
           exercises: [
@@ -189,15 +185,11 @@ export const fitnessProgram: FitnessProgram = {
               commonMistakes: "Omuz mobilitesine dikkat",
               alternatives: "Machine Shoulder Press"
             }
-          ],
-          coreAndCardio: [
-            "Isınma: 5-10 dk hafif kardiyo + hareket için 1-2 hafif set",
-            "Dinlenme: Normal setlerde 60-90 sn, FST-7 setlerinde 30-45 sn"
           ]
         },
         {
           id: "back-day",
-          name: "Sırt Günü",
+          name: "Çarşamba",
           title: "Sırt (16-20 set)",
           description: "En etkili: Pull-ups (lat), rows (orta sırt) için yüksek aktivasyon",
           exercises: [
@@ -261,15 +253,11 @@ export const fitnessProgram: FitnessProgram = {
               commonMistakes: "Göğüs altına çek",
               alternatives: "IYT Raises"
             }
-          ],
-          coreAndCardio: [
-            "Isınma: 5-10 dk hafif kardiyo + hareket için 1-2 hafif set",
-            "Dinlenme: Normal setlerde 60-90 sn, FST-7 setlerinde 30-45 sn"
           ]
         },
         {
           id: "arm-day",
-          name: "Kol Günü",
+          name: "Perşembe",
           title: "Kol (Triceps + Biceps, 26-32 set)",
           description: "En etkili: Dips ve overhead extensions (triceps), concentration curls ve chin-ups (biceps) için yüksek EMG",
           exercises: [
@@ -369,18 +357,26 @@ export const fitnessProgram: FitnessProgram = {
               commonMistakes: "Form bozulmasın",
               alternatives: "Cable Curls"
             }
-          ],
-          coreAndCardio: [
-            "Isınma: 5-10 dk hafif kardiyo + hareket için 1-2 hafif set",
-            "Dinlenme: Normal setlerde 60-90 sn, FST-7 setlerinde 30-45 sn"
           ]
         },
         {
           id: "leg-day",
-          name: "Bacak Günü",
+          name: "Cuma",
           title: "Bacak (19-22 set)",
           description: "En etkili: Squats (quad/glute), deadlifts (hamstring) için yüksek hipertrofi",
           exercises: [
+            {
+              id: "bike-warmup",
+              name: "5 min Bike (Isınma)",
+              sets: "-",
+              reps: "-",
+              rest: "-",
+              tempo: "Hafif tempo",
+              setup: "Hafif tempo",
+              movement: "Kalp atışını yükselt",
+              commonMistakes: "Kalp atışını yükselt",
+              alternatives: "Dinamik esneme"
+            },
             {
               id: "seated-leg-extensions",
               name: "Seated Leg Extensions",
@@ -465,10 +461,6 @@ export const fitnessProgram: FitnessProgram = {
               commonMistakes: "Hafif kilo",
               alternatives: "Nordic Hamstring Curls"
             }
-          ],
-          coreAndCardio: [
-            "Isınma: 5-10 dk hafif kardiyo + hareket için 1-2 hafif set",
-            "Dinlenme: Normal setlerde 60-90 sn, FST-7 setlerinde 30-45 sn"
           ]
         }
       ],
