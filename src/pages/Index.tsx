@@ -130,13 +130,24 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link to="/programs">
+            <Link to="/programs?program=fst7">
               <WorkoutCard
                 title="FST-7 Bodybuilding"
                 description="Profesyonel bodybuilding programı"
                 duration="5 gün/hafta"
                 difficulty="İleri"
                 participants="1.2K+"
+                image={strengthIcon}
+                onStart={() => {}}
+              />
+            </Link>
+            <Link to="/programs?program=split">
+              <WorkoutCard
+                title="3 Günlük Split Program"
+                description="Push-Pull-Legs FST-7 ile"
+                duration="3 gün/hafta"
+                difficulty="İleri"
+                participants="980+"
                 image={strengthIcon}
                 onStart={() => {}}
               />
@@ -149,15 +160,6 @@ const Index = () => {
               participants="2.4K+"
               image={cardioIcon}
               onStart={() => handleStartWorkout("HIIT Cardio Blast")}
-            />
-            <WorkoutCard
-              title="Morning Yoga Flow"
-              description="Günlük başlangıç yoga seansı"
-              duration="30 dk"
-              difficulty="Başlangıç"
-              participants="3.2K+"
-              image={yogaIcon}
-              onStart={() => handleStartWorkout("Morning Yoga Flow")}
             />
           </div>
         </div>

@@ -1,5 +1,432 @@
 import { FitnessProgram } from "@/types/program";
 
+export const splitProgram: FitnessProgram = {
+  id: "split-program",
+  name: "3 Günlük Split Antrenman Programı",
+  description: "Kas Hipertrofisi için Optimize Edilmiş Split Antrenman - Push-Pull-Legs (PPL) FST-7 ile",
+  weeklySchedule: [
+    "Gün 1: Push (Göğüs, Triceps)",
+    "Gün 2: Dinlenme",
+    "Gün 3: Pull (Sırt, Biceps)",
+    "Gün 4: Dinlenme",
+    "Gün 5: Legs + Shoulders (Bacaklar ve Omuzlar)",
+    "Gün 6: Dinlenme",
+    "Gün 7: Dinlenme"
+  ],
+  goals: [
+    "Maksimum kas hipertrofisi",
+    "Push-Pull-Legs split ile optimal toparlanma",
+    "FST-7 teknikleri ile metabolik stres",
+    "Fasya esnetme ve kas dolgunluğu",
+    "Haftalık 20-30 set/kas grubu"
+  ],
+  workoutDays: [
+    {
+      id: "push-day",
+      name: "Gün 1",
+      title: "Push (Göğüs, Triceps)",
+      description: "Göğüs ve triceps, itme hareketlerinde sinerjik çalışır. PPL splitinde standarttır ve hipertrofi için etkilidir.",
+      exercises: [
+        {
+          id: "incline-hammer-press",
+          name: "Incline Hammer Strength Press",
+          sets: "4",
+          reps: "8-12",
+          rest: "90-120 sn",
+          tempo: "Kontrollü",
+          setup: "Makinede 30-45° açı, göğüs üst kısmını hedefle",
+          movement: "Göğüs üst kısmına odaklanarak kontrollü it",
+          commonMistakes: "Omuz öne çıkmamalı, tam ROM kullan",
+          alternatives: "Incline Barbell/Dumbbell Press"
+        },
+        {
+          id: "dumbbell-incline-press",
+          name: "Dumbbell Incline Chest Press",
+          sets: "3",
+          reps: "8-12",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "30° incline bank, dumbbellları göğüs hizasına indir",
+          movement: "Göğüs üst kısmını sıkarak yukarı it, stabilizatör kasları çalıştır",
+          commonMistakes: "Dumbbelllar çok aşağı inmesin, bel kavisli olmasın",
+          alternatives: "Incline Smith Machine Press"
+        },
+        {
+          id: "flat-dumbbell-press",
+          name: "Flat Bench Dumbbell Press",
+          sets: "3",
+          reps: "8-12",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "Düz bank, dumbbellları göğüs ortasına indir",
+          movement: "Göğüs orta kısmını sıkarak yukarı it",
+          commonMistakes: "Dirsekler 45°, sırtı kaldırma",
+          alternatives: "Flat Barbell Press"
+        },
+        {
+          id: "cable-flyes-3-angle",
+          name: "Cable Flyes (3 Açı)",
+          sets: "3",
+          reps: "8-12",
+          rest: "60 sn",
+          tempo: "Son tekrarda tepe sıkma",
+          setup: "Üst 5, alt 5, orta 5 tekrar - son tekrarda tepe noktada sık",
+          movement: "Göğüs iç kısmına odaklanarak kolları birleştir",
+          commonMistakes: "Omuz yüklenmesin, hafif kilo kullan",
+          alternatives: "Dumbbell Flyes"
+        },
+        {
+          id: "smith-incline-fst7",
+          name: "Smith Incline Press (FST-7)",
+          sets: "7",
+          reps: "8-12",
+          rest: "30-45 sn",
+          tempo: "Pompalama odaklı",
+          setup: "Smith makinesinde 30° açı, hafif kilo",
+          movement: "Hızlı tempoda pompala, metabolik stres yarat",
+          commonMistakes: "Form bozulmasın, hafif kilo tercih et",
+          alternatives: "Cable Press"
+        },
+        {
+          id: "cable-pushdowns",
+          name: "Cable Pushdowns",
+          sets: "3",
+          reps: "10",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Yüksek kablo, rope attachment, dirsek sabit",
+          movement: "Triceps lateral başını sıkarak aşağı it",
+          commonMistakes: "Dirsek öne çıkmasın, vücut sabit",
+          alternatives: "Straight Bar Pushdowns"
+        },
+        {
+          id: "close-grip-bench",
+          name: "Close-Grip Bench Press",
+          sets: "3",
+          reps: "10",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "Dar tutuş (omuz genişliği), göğüse indir",
+          movement: "Triceps ile yukarı it, göğüs ikincil",
+          commonMistakes: "Bel kavisli olmasın",
+          alternatives: "Close-Grip Smith Press"
+        },
+        {
+          id: "skull-crusher",
+          name: "Skull Crusher",
+          sets: "3",
+          reps: "10",
+          rest: "60 sn",
+          tempo: "Yavaş negatif",
+          setup: "EZ bar, alın üstüne kontrollü indir",
+          movement: "Triceps uzun başını hedefle",
+          commonMistakes: "Dirsek sabit kal",
+          alternatives: "Dumbbell Skull Crusher"
+        },
+        {
+          id: "triceps-extension-fst7",
+          name: "Triceps Extension Seated (FST-7)",
+          sets: "7",
+          reps: "10",
+          rest: "30 sn",
+          tempo: "Pompalama",
+          setup: "Oturarak, tek dumbbell iki elle, baş arkasına indir",
+          movement: "Triceps uzun başını pompala, hafif kilo",
+          commonMistakes: "Omuz yüklenmesin, form koru",
+          alternatives: "Cable Overhead Extension"
+        }
+      ]
+    },
+    {
+      id: "pull-day",
+      name: "Gün 3",
+      title: "Pull (Sırt, Biceps)",
+      description: "Sırt ve biceps, çekme hareketlerinde sinerjik çalışır. V-taper estetiği ve biceps kütlesi için optimize edilmiş.",
+      exercises: [
+        {
+          id: "lat-pulldown-wide",
+          name: "Lat Pulldown Wide Grip",
+          sets: "4",
+          reps: "10-12",
+          rest: "90-120 sn",
+          tempo: "Kontrollü",
+          setup: "Geniş tutuş, göğse çek, lat genişliği için",
+          movement: "Latissimus dorsi'yi sıkarak göğse çek",
+          commonMistakes: "Momentum kullanma, tam ROM",
+          alternatives: "Wide-Grip Pull-Ups"
+        },
+        {
+          id: "low-cable-row-wide",
+          name: "Low Cable Row Wide Grip",
+          sets: "3",
+          reps: "10-12",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "Geniş tutuş, göğse çek, orta sırt kalınlığı",
+          movement: "Kürek kemiklerini birleştir, sırt ortasını sık",
+          commonMistakes: "Göğüs öne çıkmasın, momentum yok",
+          alternatives: "Seated Machine Row"
+        },
+        {
+          id: "t-bar-row-wide",
+          name: "T-Bar Row Wide Grip",
+          sets: "3",
+          reps: "10-12",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "Geniş tutuş, göğse çek, sırt kütlesi için",
+          movement: "Sırt kalınlığını artırmak için güçlü çek",
+          commonMistakes: "Sırt düz, bel yüklenme yok",
+          alternatives: "Bent-Over Barbell Row"
+        },
+        {
+          id: "unilateral-iso-row",
+          name: "Unilateral Iso Row",
+          sets: "3",
+          reps: "10-12",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Tek kollu makine row, kas imbalansı düzelt",
+          movement: "Her tarafı eşit çalıştır, sırt gelişimi dengele",
+          commonMistakes: "Her taraf eşit set/tekrar",
+          alternatives: "One-Arm Dumbbell Row"
+        },
+        {
+          id: "seated-high-rope-row",
+          name: "Seated High Rope Pulley Rows",
+          sets: "5",
+          reps: "10-12",
+          rest: "45 sn",
+          tempo: "Tepe sıkma",
+          setup: "Yüksek kablo, göğüs altına çek, tepe noktada sık",
+          movement: "Sırt üstü detayı için kasılmayı artır",
+          commonMistakes: "Momentum kullanma, 2 sn sık",
+          alternatives: "Face Pulls"
+        },
+        {
+          id: "dumbbell-curls",
+          name: "Dumbbell Curls",
+          sets: "3",
+          reps: "10",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Ayakta, alternatif veya beraber, biceps kütlesi",
+          movement: "Biceps'i sıkarak yukarı kaldır",
+          commonMistakes: "Dirsek sabit, momentum yok",
+          alternatives: "Barbell Curls"
+        },
+        {
+          id: "one-arm-preacher",
+          name: "One Arm Preacher Curl",
+          sets: "3",
+          reps: "10",
+          rest: "60 sn",
+          tempo: "Tepe sıkma",
+          setup: "Preacher bench, tek kol, biceps tepe izolasyonu",
+          movement: "Tepe noktada biceps'i maksimum sık",
+          commonMistakes: "Her taraf eşit, dirsek destekli",
+          alternatives: "Machine Preacher Curl"
+        },
+        {
+          id: "spider-curl",
+          name: "Spider Curl",
+          sets: "3",
+          reps: "10",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Incline bench ters, göğüs dayalı, biceps uzun baş",
+          movement: "Biceps uzun başını izole et",
+          commonMistakes: "Tam ROM kullan",
+          alternatives: "Incline Dumbbell Curl"
+        },
+        {
+          id: "barbell-curls-fst7",
+          name: "Barbell Curls (FST-7)",
+          sets: "7",
+          reps: "10",
+          rest: "30 sn",
+          tempo: "Pompalama",
+          setup: "EZ bar veya straight bar, hafif kilo",
+          movement: "Biceps'i pompala, metabolik stres",
+          commonMistakes: "Form bozulmasın, hafif kilo",
+          alternatives: "Cable Curls"
+        }
+      ]
+    },
+    {
+      id: "legs-shoulders-day",
+      name: "Gün 5",
+      title: "Legs + Shoulders (Bacaklar ve Omuzlar)",
+      description: "Bacaklar ve omuzlar birlikte - büyük kas grubu ve üst vücut dengesi için optimize edilmiş program.",
+      exercises: [
+        {
+          id: "bike-warmup-split",
+          name: "5 dk Bike (Isınma)",
+          sets: "-",
+          reps: "-",
+          rest: "-",
+          tempo: "Hafif tempo",
+          setup: "Hafif tempoda bisiklet",
+          movement: "Kan akışını artır, yaralanma riskini azalt",
+          commonMistakes: "Çok yoğun yapma",
+          alternatives: "Dinamik esneme"
+        },
+        {
+          id: "leg-extensions-split",
+          name: "Leg Extensions",
+          sets: "3",
+          reps: "10",
+          rest: "90 sn",
+          tempo: "Tam uzat",
+          setup: "Makinede otur, quad izolasyonu",
+          movement: "Quadriceps'i sıkarak bacağı düzleştir",
+          commonMistakes: "Diz yüklenme yok, kontrollü hareket",
+          alternatives: "Sissy Squats"
+        },
+        {
+          id: "front-squats",
+          name: "Front Squats",
+          sets: "3",
+          reps: "10",
+          rest: "120 sn",
+          tempo: "Derin in",
+          setup: "Barbell ön omuzda, dik duruş",
+          movement: "Quadriceps odaklı derin squat",
+          commonMistakes: "Sırt dik kal, diz öne çıkmasın aşırı",
+          alternatives: "Goblet Squats"
+        },
+        {
+          id: "hack-squat",
+          name: "Hack Squat",
+          sets: "3",
+          reps: "10",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "Hack squat makinesinde, quadriceps odaklı",
+          movement: "Quadriceps kütlesi için kontrollü hareket",
+          commonMistakes: "Diz kilitleme yok, tam ROM",
+          alternatives: "Smith Machine Squat"
+        },
+        {
+          id: "leg-press-fst7-split",
+          name: "Leg Press (FST-7)",
+          sets: "7",
+          reps: "10",
+          rest: "45 sn",
+          tempo: "Pompalama",
+          setup: "Ayak orta pozisyon, hafif kilo",
+          movement: "Genel bacak kütlesi için pompala",
+          commonMistakes: "Diz kilitleme yok, form koru",
+          alternatives: "Bulgarian Split Squats"
+        },
+        {
+          id: "single-leg-curls",
+          name: "Single Leg Curls",
+          sets: "3",
+          reps: "10",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Makinede tek bacak, hamstring izolasyonu",
+          movement: "Her bacağı eşit çalıştır, imbalans önle",
+          commonMistakes: "Taraf başına eşit set",
+          alternatives: "Seated Leg Curl (tek bacak)"
+        },
+        {
+          id: "stiff-leg-deadlift",
+          name: "Stiff-Leg Deadlifts",
+          sets: "3",
+          reps: "10",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "Hafif bükük diz, barbell ile hamstring esnetme",
+          movement: "Hamstring ve glute'u esnet, arka zincir güçlendir",
+          commonMistakes: "Sırt düz kal, bel yaralanması riski",
+          alternatives: "Romanian Deadlifts"
+        },
+        {
+          id: "lying-leg-curls-fst7",
+          name: "Lying Leg Curls (FST-7)",
+          sets: "7",
+          reps: "10",
+          rest: "30 sn",
+          tempo: "Pompalama",
+          setup: "Yatarak, hamstring pompası, hafif kilo",
+          movement: "Hamstring'i pompala, metabolik stres",
+          commonMistakes: "Hafif kilo kullan, form bozulmasın",
+          alternatives: "Nordic Hamstring Curls"
+        },
+        {
+          id: "seated-dumbbell-press-split",
+          name: "Seated Dumbbell Press",
+          sets: "4",
+          reps: "10-12",
+          rest: "90 sn",
+          tempo: "Kontrollü",
+          setup: "Oturarak, dumbbellları omuz hizasından yukarı it",
+          movement: "Ön ve yan deltoid için temel bileşik hareket",
+          commonMistakes: "Sırt nötr, momentum yok",
+          alternatives: "Seated Barbell Press"
+        },
+        {
+          id: "standing-side-raises",
+          name: "Standing Dumbbell Side Raises",
+          sets: "3",
+          reps: "10-12",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Ayakta, hafif öne eğil, yan deltoid izolasyonu",
+          movement: "Yan deltoid'i sıkarak yanlara kaldır",
+          commonMistakes: "Dirsek kilitleme yok, momentum kullanma",
+          alternatives: "Cable Lateral Raises"
+        },
+        {
+          id: "behind-back-cable-raises",
+          name: "Behind the Back Cable Side Raises",
+          sets: "3",
+          reps: "10-12",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Düşük kablo, arkadan tutarak yan ve arka deltoid",
+          movement: "Yan ve arka deltoid geçişini hedefle",
+          commonMistakes: "Hafif kilo, form öncelikli",
+          alternatives: "Reverse Pec Deck"
+        },
+        {
+          id: "front-raise-incline",
+          name: "Front Raise off Incline Bench",
+          sets: "3",
+          reps: "10-12",
+          rest: "60 sn",
+          tempo: "Kontrollü",
+          setup: "Incline bench göğüs dayalı, ön deltoid izolasyonu",
+          movement: "Ön deltoid'i sıkarak öne kaldır",
+          commonMistakes: "Momentum yok, kontrollü hareket",
+          alternatives: "Dumbbell Front Raises"
+        },
+        {
+          id: "reverse-pec-deck-fst7",
+          name: "Reverse Pec Deck Flyes (FST-7)",
+          sets: "7",
+          reps: "10-12",
+          rest: "30 sn",
+          tempo: "Pompalama",
+          setup: "Makinede ters otur, arka deltoid pompası",
+          movement: "Arka deltoid'i pompala, hafif kilo kullan",
+          commonMistakes: "Form bozulmasın, hafif kilo",
+          alternatives: "Cable Reverse Flyes"
+        }
+      ]
+    }
+  ],
+  notes: {
+    rir: "Normal setlerde 1-2, FST-7 setlerinde 0-1",
+    progression: "Her hafta ağırlık veya tekrar %5-10 artır",
+    fst7: "FST-7 setlerinde 30-45 sn dinlenme, hafif kilo, metabolik stres ve fasya esnetme",
+    restBetween: "Normal setlerde 60-120 sn, FST-7 setlerinde 30-45 sn",
+    additional: "Isınma: 5-10 dk hafif kardiyo. Beslenme: Protein 1.6-2.2 g/kg, kalori surplus, 7-9 saat uyku. Toparlanma: 4-6 haftada deload. Form öncelikli, ağrı durumunda doktora danış."
+  }
+};
+
 export const fitnessProgram: FitnessProgram = {
   id: "fst7-bodybuilding-program",
   name: "FST-7 Bodybuilding Programı",
