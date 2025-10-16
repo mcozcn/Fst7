@@ -37,7 +37,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Makinede 30-45° açı, göğüs üst kısmını hedefle",
           movement: "Göğüs üst kısmına odaklanarak kontrollü it",
           commonMistakes: "Omuz öne çıkmamalı, tam ROM kullan",
-          alternatives: "Incline Barbell/Dumbbell Press"
+          alternatives: "Incline Barbell/Dumbbell Press",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "dumbbell-incline-press",
@@ -49,7 +51,9 @@ export const splitProgram: FitnessProgram = {
           setup: "30° incline bank, dumbbellları göğüs hizasına indir",
           movement: "Göğüs üst kısmını sıkarak yukarı it, stabilizatör kasları çalıştır",
           commonMistakes: "Dumbbelllar çok aşağı inmesin, bel kavisli olmasın",
-          alternatives: "Incline Smith Machine Press"
+          alternatives: "Incline Smith Machine Press",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "flat-dumbbell-press",
@@ -61,7 +65,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Düz bank, dumbbellları göğüs ortasına indir",
           movement: "Göğüs orta kısmını sıkarak yukarı it",
           commonMistakes: "Dirsekler 45°, sırtı kaldırma",
-          alternatives: "Flat Barbell Press"
+          alternatives: "Flat Barbell Press",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "cable-flyes-3-angle",
@@ -73,7 +79,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Üst 5, alt 5, orta 5 tekrar - son tekrarda tepe noktada sık",
           movement: "Göğüs iç kısmına odaklanarak kolları birleştir",
           commonMistakes: "Omuz yüklenmesin, hafif kilo kullan",
-          alternatives: "Dumbbell Flyes"
+          alternatives: "Dumbbell Flyes",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "smith-incline-fst7",
@@ -85,7 +93,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Smith makinesinde 30° açı, hafif kilo",
           movement: "Hızlı tempoda pompala, metabolik stres yarat",
           commonMistakes: "Form bozulmasın, hafif kilo tercih et",
-          alternatives: "Cable Press"
+          alternatives: "Cable Press",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "cable-pushdowns",
@@ -97,7 +107,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Yüksek kablo, rope attachment, dirsek sabit",
           movement: "Triceps lateral başını sıkarak aşağı it",
           commonMistakes: "Dirsek öne çıkmasın, vücut sabit",
-          alternatives: "Straight Bar Pushdowns"
+          alternatives: "Straight Bar Pushdowns",
+          muscleGroup: "Triceps",
+          muscleImage: "/src/assets/muscles/triceps.png"
         },
         {
           id: "close-grip-bench",
@@ -109,7 +121,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Dar tutuş (omuz genişliği), göğüse indir",
           movement: "Triceps ile yukarı it, göğüs ikincil",
           commonMistakes: "Bel kavisli olmasın",
-          alternatives: "Close-Grip Smith Press"
+          alternatives: "Close-Grip Smith Press",
+          muscleGroup: "Triceps",
+          muscleImage: "/src/assets/muscles/triceps.png"
         },
         {
           id: "skull-crusher",
@@ -121,7 +135,9 @@ export const splitProgram: FitnessProgram = {
           setup: "EZ bar, alın üstüne kontrollü indir",
           movement: "Triceps uzun başını hedefle",
           commonMistakes: "Dirsek sabit kal",
-          alternatives: "Dumbbell Skull Crusher"
+          alternatives: "Dumbbell Skull Crusher",
+          muscleGroup: "Triceps",
+          muscleImage: "/src/assets/muscles/triceps.png"
         },
         {
           id: "triceps-extension-fst7",
@@ -133,7 +149,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Oturarak, tek dumbbell iki elle, baş arkasına indir",
           movement: "Triceps uzun başını pompala, hafif kilo",
           commonMistakes: "Omuz yüklenmesin, form koru",
-          alternatives: "Cable Overhead Extension"
+          alternatives: "Cable Overhead Extension",
+          muscleGroup: "Triceps",
+          muscleImage: "/src/assets/muscles/triceps.png"
         }
       ]
     },
@@ -153,7 +171,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Geniş tutuş, göğse çek, lat genişliği için",
           movement: "Latissimus dorsi'yi sıkarak göğse çek",
           commonMistakes: "Momentum kullanma, tam ROM",
-          alternatives: "Wide-Grip Pull-Ups"
+          alternatives: "Wide-Grip Pull-Ups",
+          muscleGroup: "Sırt",
+          muscleImage: "/src/assets/muscles/back.png"
         },
         {
           id: "low-cable-row-wide",
@@ -165,7 +185,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Geniş tutuş, göğse çek, orta sırt kalınlığı",
           movement: "Kürek kemiklerini birleştir, sırt ortasını sık",
           commonMistakes: "Göğüs öne çıkmasın, momentum yok",
-          alternatives: "Seated Machine Row"
+          alternatives: "Seated Machine Row",
+          muscleGroup: "Sırt",
+          muscleImage: "/src/assets/muscles/back.png"
         },
         {
           id: "t-bar-row-wide",
@@ -177,7 +199,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Geniş tutuş, göğse çek, sırt kütlesi için",
           movement: "Sırt kalınlığını artırmak için güçlü çek",
           commonMistakes: "Sırt düz, bel yüklenme yok",
-          alternatives: "Bent-Over Barbell Row"
+          alternatives: "Bent-Over Barbell Row",
+          muscleGroup: "Sırt",
+          muscleImage: "/src/assets/muscles/back.png"
         },
         {
           id: "unilateral-iso-row",
@@ -189,7 +213,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Tek kollu makine row, kas imbalansı düzelt",
           movement: "Her tarafı eşit çalıştır, sırt gelişimi dengele",
           commonMistakes: "Her taraf eşit set/tekrar",
-          alternatives: "One-Arm Dumbbell Row"
+          alternatives: "One-Arm Dumbbell Row",
+          muscleGroup: "Sırt",
+          muscleImage: "/src/assets/muscles/back.png"
         },
         {
           id: "seated-high-rope-row",
@@ -201,7 +227,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Yüksek kablo, göğüs altına çek, tepe noktada sık",
           movement: "Sırt üstü detayı için kasılmayı artır",
           commonMistakes: "Momentum kullanma, 2 sn sık",
-          alternatives: "Face Pulls"
+          alternatives: "Face Pulls",
+          muscleGroup: "Sırt",
+          muscleImage: "/src/assets/muscles/back.png"
         },
         {
           id: "dumbbell-curls",
@@ -213,7 +241,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Ayakta, alternatif veya beraber, biceps kütlesi",
           movement: "Biceps'i sıkarak yukarı kaldır",
           commonMistakes: "Dirsek sabit, momentum yok",
-          alternatives: "Barbell Curls"
+          alternatives: "Barbell Curls",
+          muscleGroup: "Biceps",
+          muscleImage: "/src/assets/muscles/biceps.png"
         },
         {
           id: "one-arm-preacher",
@@ -225,7 +255,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Preacher bench, tek kol, biceps tepe izolasyonu",
           movement: "Tepe noktada biceps'i maksimum sık",
           commonMistakes: "Her taraf eşit, dirsek destekli",
-          alternatives: "Machine Preacher Curl"
+          alternatives: "Machine Preacher Curl",
+          muscleGroup: "Biceps",
+          muscleImage: "/src/assets/muscles/biceps.png"
         },
         {
           id: "spider-curl",
@@ -237,7 +269,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Incline bench ters, göğüs dayalı, biceps uzun baş",
           movement: "Biceps uzun başını izole et",
           commonMistakes: "Tam ROM kullan",
-          alternatives: "Incline Dumbbell Curl"
+          alternatives: "Incline Dumbbell Curl",
+          muscleGroup: "Biceps",
+          muscleImage: "/src/assets/muscles/biceps.png"
         },
         {
           id: "barbell-curls-fst7",
@@ -249,7 +283,9 @@ export const splitProgram: FitnessProgram = {
           setup: "EZ bar veya straight bar, hafif kilo",
           movement: "Biceps'i pompala, metabolik stres",
           commonMistakes: "Form bozulmasın, hafif kilo",
-          alternatives: "Cable Curls"
+          alternatives: "Cable Curls",
+          muscleGroup: "Biceps",
+          muscleImage: "/src/assets/muscles/biceps.png"
         }
       ]
     },
@@ -281,7 +317,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Makinede otur, quad izolasyonu",
           movement: "Quadriceps'i sıkarak bacağı düzleştir",
           commonMistakes: "Diz yüklenme yok, kontrollü hareket",
-          alternatives: "Sissy Squats"
+          alternatives: "Sissy Squats",
+          muscleGroup: "Quadriceps",
+          muscleImage: "/src/assets/muscles/quadriceps.png"
         },
         {
           id: "front-squats",
@@ -293,7 +331,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Barbell ön omuzda, dik duruş",
           movement: "Quadriceps odaklı derin squat",
           commonMistakes: "Sırt dik kal, diz öne çıkmasın aşırı",
-          alternatives: "Goblet Squats"
+          alternatives: "Goblet Squats",
+          muscleGroup: "Quadriceps",
+          muscleImage: "/src/assets/muscles/quadriceps.png"
         },
         {
           id: "hack-squat",
@@ -305,7 +345,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Hack squat makinesinde, quadriceps odaklı",
           movement: "Quadriceps kütlesi için kontrollü hareket",
           commonMistakes: "Diz kilitleme yok, tam ROM",
-          alternatives: "Smith Machine Squat"
+          alternatives: "Smith Machine Squat",
+          muscleGroup: "Quadriceps",
+          muscleImage: "/src/assets/muscles/quadriceps.png"
         },
         {
           id: "leg-press-fst7-split",
@@ -317,7 +359,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Ayak orta pozisyon, hafif kilo",
           movement: "Genel bacak kütlesi için pompala",
           commonMistakes: "Diz kilitleme yok, form koru",
-          alternatives: "Bulgarian Split Squats"
+          alternatives: "Bulgarian Split Squats",
+          muscleGroup: "Quadriceps",
+          muscleImage: "/src/assets/muscles/quadriceps.png"
         },
         {
           id: "single-leg-curls",
@@ -329,7 +373,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Makinede tek bacak, hamstring izolasyonu",
           movement: "Her bacağı eşit çalıştır, imbalans önle",
           commonMistakes: "Taraf başına eşit set",
-          alternatives: "Seated Leg Curl (tek bacak)"
+          alternatives: "Seated Leg Curl (tek bacak)",
+          muscleGroup: "Hamstring",
+          muscleImage: "/src/assets/muscles/hamstring.png"
         },
         {
           id: "stiff-leg-deadlift",
@@ -341,7 +387,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Hafif bükük diz, barbell ile hamstring esnetme",
           movement: "Hamstring ve glute'u esnet, arka zincir güçlendir",
           commonMistakes: "Sırt düz kal, bel yaralanması riski",
-          alternatives: "Romanian Deadlifts"
+          alternatives: "Romanian Deadlifts",
+          muscleGroup: "Hamstring",
+          muscleImage: "/src/assets/muscles/hamstring.png"
         },
         {
           id: "lying-leg-curls-fst7",
@@ -353,7 +401,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Yatarak, hamstring pompası, hafif kilo",
           movement: "Hamstring'i pompala, metabolik stres",
           commonMistakes: "Hafif kilo kullan, form bozulmasın",
-          alternatives: "Nordic Hamstring Curls"
+          alternatives: "Nordic Hamstring Curls",
+          muscleGroup: "Hamstring",
+          muscleImage: "/src/assets/muscles/hamstring.png"
         },
         {
           id: "seated-dumbbell-press-split",
@@ -365,7 +415,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Oturarak, dumbbellları omuz hizasından yukarı it",
           movement: "Ön ve yan deltoid için temel bileşik hareket",
           commonMistakes: "Sırt nötr, momentum yok",
-          alternatives: "Seated Barbell Press"
+          alternatives: "Seated Barbell Press",
+          muscleGroup: "Omuz",
+          muscleImage: "/src/assets/muscles/shoulders.png"
         },
         {
           id: "standing-side-raises",
@@ -377,7 +429,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Ayakta, hafif öne eğil, yan deltoid izolasyonu",
           movement: "Yan deltoid'i sıkarak yanlara kaldır",
           commonMistakes: "Dirsek kilitleme yok, momentum kullanma",
-          alternatives: "Cable Lateral Raises"
+          alternatives: "Cable Lateral Raises",
+          muscleGroup: "Omuz",
+          muscleImage: "/src/assets/muscles/shoulders.png"
         },
         {
           id: "behind-back-cable-raises",
@@ -389,7 +443,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Düşük kablo, arkadan tutarak yan ve arka deltoid",
           movement: "Yan ve arka deltoid geçişini hedefle",
           commonMistakes: "Hafif kilo, form öncelikli",
-          alternatives: "Reverse Pec Deck"
+          alternatives: "Reverse Pec Deck",
+          muscleGroup: "Omuz",
+          muscleImage: "/src/assets/muscles/shoulders.png"
         },
         {
           id: "front-raise-incline",
@@ -401,7 +457,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Incline bench göğüs dayalı, ön deltoid izolasyonu",
           movement: "Ön deltoid'i sıkarak öne kaldır",
           commonMistakes: "Momentum yok, kontrollü hareket",
-          alternatives: "Dumbbell Front Raises"
+          alternatives: "Dumbbell Front Raises",
+          muscleGroup: "Omuz",
+          muscleImage: "/src/assets/muscles/shoulders.png"
         },
         {
           id: "reverse-pec-deck-fst7",
@@ -413,7 +471,9 @@ export const splitProgram: FitnessProgram = {
           setup: "Makinede ters otur, arka deltoid pompası",
           movement: "Arka deltoid'i pompala, hafif kilo kullan",
           commonMistakes: "Form bozulmasın, hafif kilo",
-          alternatives: "Cable Reverse Flyes"
+          alternatives: "Cable Reverse Flyes",
+          muscleGroup: "Omuz",
+          muscleImage: "/src/assets/muscles/shoulders.png"
         }
       ]
     }
@@ -464,7 +524,9 @@ export const fitnessProgram: FitnessProgram = {
           setup: "30° incline, barı göğüse indir, göğüs hizasından it, tam ROM",
           movement: "Barı göğüs hizasına kontrollü indir, göğüs kaslarını sıkarak yukarı it",
           commonMistakes: "Omuz yüklenmesin, bel kavisli olmasın",
-          alternatives: "Dumbbell Incline Press"
+          alternatives: "Dumbbell Incline Press",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "barbell-flat-bench-press",
@@ -476,7 +538,9 @@ export const fitnessProgram: FitnessProgram = {
           setup: "Düz bank, barı orta göğüse indir",
           movement: "Barı göğüs ortasına kontrollü indir, güçlü şekilde yukarı it",
           commonMistakes: "Dirsekler 45°, sırtı kaldırma",
-          alternatives: "Guillotine Press"
+          alternatives: "Guillotine Press",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "weighted-dips",
@@ -488,7 +552,9 @@ export const fitnessProgram: FitnessProgram = {
           setup: "Göğüs öne eğik, dirsekleri aç, derin in",
           movement: "Vücudu aşağı indir, göğüs kaslarını sıkarak yukarı it",
           commonMistakes: "Omuz ağrısı varsa nötr tutuş",
-          alternatives: "Chest Dips (makine)"
+          alternatives: "Chest Dips (makine)",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "pec-deck-flyes",
@@ -500,7 +566,9 @@ export const fitnessProgram: FitnessProgram = {
           setup: "Oturarak, kolları birleştir",
           movement: "Kolları kontrollü şekilde birleştir, zirvede 2 saniye sık",
           commonMistakes: "Omuz öne çıkmasın, hafif kilo",
-          alternatives: "Cable Crossovers"
+          alternatives: "Cable Crossovers",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         },
         {
           id: "cable-crossovers-fst7",
@@ -512,7 +580,9 @@ export const fitnessProgram: FitnessProgram = {
           setup: "Orta kablo, göğüsü sık",
           movement: "Kolları göğüs önünde birleştir, metabolik stresi tetikle",
           commonMistakes: "metabolik stresi tetikle",
-          alternatives: "Dumbbell Flyes (yatay bank)"
+          alternatives: "Dumbbell Flyes (yatay bank)",
+          muscleGroup: "Göğüs",
+          muscleImage: "/src/assets/muscles/chest.png"
         }
       ]
     },
@@ -532,7 +602,9 @@ export const fitnessProgram: FitnessProgram = {
           setup: "Ayakta/oturarak, barı kulak hizasına indir",
           movement: "Barı kulak hizasından yukarı doğru it, kontrollü indir",
           commonMistakes: "Sırt nötr, momentum yok",
-          alternatives: "Seated Dumbbell Press"
+          alternatives: "Seated Dumbbell Press",
+          muscleGroup: "Omuz",
+          muscleImage: "/src/assets/muscles/shoulders.png"
         },
         {
           id: "dumbbell-lateral-raises",
