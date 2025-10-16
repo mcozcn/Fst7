@@ -9,8 +9,8 @@ export interface Exercise {
   movement: string;
   commonMistakes: string;
   alternatives: string;
-  muscleGroup: string;
-  muscleImage: string;
+  muscleGroup?: string;
+  muscleImage?: string;
 }
 
 export interface WorkoutDay {
