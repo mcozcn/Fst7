@@ -15,14 +15,17 @@ import shouldersImg from "@/assets/muscles/shoulders.png";
 import glutesImg from "@/assets/muscles/glutes.png";
 
 const MUSCLE_IMAGES: Record<string, string> = {
-  chest: chestImg,
-  triceps: tricepsImg,
-  back: backImg,
-  biceps: bicepsImg,
-  quadriceps: quadricepsImg,
-  hamstring: hamstringImg,
-  shoulders: shouldersImg,
-  glutes: glutesImg,
+  "göğüs": chestImg,
+  "chest": chestImg,
+  "triceps": tricepsImg,
+  "sırt": backImg,
+  "back": backImg,
+  "biceps": bicepsImg,
+  "quadriceps": quadricepsImg,
+  "hamstring": hamstringImg,
+  "omuz": shouldersImg,
+  "shoulders": shouldersImg,
+  "glutes": glutesImg,
 };
 
 interface ExerciseCardProps {
@@ -32,8 +35,10 @@ interface ExerciseCardProps {
 
 export function ExerciseCard({ exercise, index }: ExerciseCardProps) {
   const [isOpen, setIsOpen] = useState(false);
+  
+  // Normalize muscle group name and get the correct image
   const muscleKey = (exercise.muscleGroup ?? "").toLowerCase().trim();
-  const muscleSrc = exercise.muscleImage ?? MUSCLE_IMAGES[muscleKey];
+  const muscleSrc = MUSCLE_IMAGES[muscleKey];
 
   return (
     <Card variant="workout" className="mb-4">
@@ -69,21 +74,23 @@ export function ExerciseCard({ exercise, index }: ExerciseCardProps) {
           </Badge>
         </div>
 
-        {(exercise.muscleGroup || muscleSrc) && (
-          <div className="mt-3 flex items-center gap-3">
-            {muscleSrc && (
-              <img
-                src={muscleSrc}
-                alt={`Hedef Kas: ${exercise.muscleGroup ?? "Kas"}`}
-                className="w-12 h-12 rounded-md object-contain border border-border bg-card"
-                loading="lazy"
-              />
-            )}
-            {exercise.muscleGroup && (
-              <Badge variant="secondary" className="capitalize">
+        {(exercise.muscleGroup && muscleSrc) && (
+          <div className="mt-4 grid grid-cols-[120px_1fr] gap-4 items-center p-3 bg-muted/30 rounded-lg border border-border/50">
+            <img
+              src={muscleSrc}
+              alt={`Hedef Kas: ${exercise.muscleGroup}`}
+              className="w-full h-28 object-contain rounded-md bg-background/50 p-2"
+              loading="lazy"
+            />
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <Target className="w-4 h-4 text-primary" />
+                <span className="text-sm font-semibold">Hedef Kas Grubu</span>
+              </div>
+              <Badge variant="secondary" className="capitalize w-fit text-base px-4 py-1.5">
                 {exercise.muscleGroup}
               </Badge>
-            )}
+            </div>
           </div>
         )}
       </CardHeader>
