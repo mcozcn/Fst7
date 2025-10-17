@@ -98,8 +98,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/chest.png"
         },
         {
-          id: "cable-pushdowns",
-          name: "Cable Pushdowns",
+          id: "triceps-pushdowns",
+          name: "Triceps Pushdown",
           sets: "3",
           reps: "10",
           rest: "60 sn",
@@ -112,8 +112,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/triceps.png"
         },
         {
-          id: "close-grip-bench",
-          name: "Close-Grip Bench Press",
+          id: "cable-pushdown",
+          name: "Cable Pushdown",
           sets: "3",
           reps: "10",
           rest: "90 sn",
@@ -126,8 +126,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/triceps.png"
         },
         {
-          id: "skull-crusher",
-          name: "Skull Crusher",
+          id: "triceps-overhead-pushdown",
+          name: "Triceps Overhead Pushdown",
           sets: "3",
           reps: "10",
           rest: "60 sn",
@@ -140,8 +140,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/triceps.png"
         },
         {
-          id: "triceps-extension-fst7",
-          name: "Triceps Extension Seated (FST-7)",
+          id: "cable-overhead-triceps-extension-fst7",
+          name: "Cable Overhead Triceps Extension (FST-7)",
           sets: "7",
           reps: "10",
           rest: "30 sn",
@@ -204,8 +204,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/back.png"
         },
         {
-          id: "unilateral-iso-row",
-          name: "Unilateral Iso Row",
+          id: "overhead-single-arm-lat-pulldown",
+          name: "Overhead Single Arm Lat Pulldown",
           sets: "3",
           reps: "10-12",
           rest: "60 sn",
@@ -260,8 +260,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/biceps.png"
         },
         {
-          id: "spider-curl",
-          name: "Spider Curl",
+          id: "incline-dumbbell-curl",
+          name: "Incline Dumbell Curl",
           sets: "3",
           reps: "10",
           rest: "60 sn",
@@ -322,8 +322,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/quadriceps.png"
         },
         {
-          id: "front-squats",
-          name: "Front Squats",
+          id: "goblet-squat",
+          name: "Goblet squat",
           sets: "3",
           reps: "10",
           rest: "120 sn",
@@ -336,8 +336,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/quadriceps.png"
         },
         {
-          id: "hack-squat",
-          name: "Hack Squat",
+          id: "elevated-smith-machine-squat",
+          name: "Elevated Smith Machine Squat",
           sets: "3",
           reps: "10",
           rest: "90 sn",
@@ -462,8 +462,8 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/shoulders.png"
         },
         {
-          id: "reverse-pec-deck-fst7",
-          name: "Reverse Pec Deck Flyes (FST-7)",
+          id: "face-pull-fst7",
+          name: "Face Pull (FST-7)",
           sets: "7",
           reps: "10-12",
           rest: "30 sn",
