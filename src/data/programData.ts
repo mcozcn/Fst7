@@ -296,18 +296,6 @@ export const splitProgram: FitnessProgram = {
       description: "Bacaklar ve omuzlar birlikte - büyük kas grubu ve üst vücut dengesi için optimize edilmiş program.",
       exercises: [
         {
-          id: "bike-warmup-split",
-          name: "5 dk Bike (Isınma)",
-          sets: "-",
-          reps: "-",
-          rest: "-",
-          tempo: "Hafif tempo",
-          setup: "Hafif tempoda bisiklet",
-          movement: "Kan akışını artır, yaralanma riskini azalt",
-          commonMistakes: "Çok yoğun yapma",
-          alternatives: "Dinamik esneme"
-        },
-        {
           id: "seated-dumbbell-press-split",
           name: "Seated Dumbbell Press",
           sets: "4",
