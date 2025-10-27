@@ -338,16 +338,16 @@ export const splitProgram: FitnessProgram = {
           muscleImage: "/src/assets/muscles/shoulders.png"
         },
         {
-          id: "front-raise-incline",
-          name: "Front Raise off Incline Bench",
+          id: "smith-machine-military-press",
+          name: "Smith Machine Military Press",
           sets: "3",
           reps: "10-12",
           rest: "60 sn",
           tempo: "Kontrollü",
-          setup: "Incline bench göğüs dayalı, ön deltoid izolasyonu",
-          movement: "Ön deltoid'i sıkarak öne kaldır",
-          commonMistakes: "Momentum yok, kontrollü hareket",
-          alternatives: "Dumbbell Front Raises",
+          setup: "Smith machine'de otur, bar omuz hizasında",
+          movement: "Barı yukarı doğru it, ön ve yan deltoid çalıştır",
+          commonMistakes: "Sırt düz kal, momentum kullanma",
+          alternatives: "Barbell Military Press",
           muscleGroup: "Omuz",
           muscleImage: "/src/assets/muscles/shoulders.png"
         },
