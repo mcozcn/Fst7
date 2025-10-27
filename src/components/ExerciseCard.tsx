@@ -13,6 +13,7 @@ import quadricepsImg from "@/assets/muscles/quadriceps.png";
 import hamstringImg from "@/assets/muscles/hamstring.png";
 import shouldersImg from "@/assets/muscles/shoulders.png";
 import glutesImg from "@/assets/muscles/glutes.png";
+import calvesImg from "@/assets/muscles/calves.png";
 
 const MUSCLE_IMAGES: Record<string, string> = {
   "göğüs": chestImg,
@@ -26,6 +27,7 @@ const MUSCLE_IMAGES: Record<string, string> = {
   "omuz": shouldersImg,
   "shoulders": shouldersImg,
   "glutes": glutesImg,
+  "calves": calvesImg,
 };
 
 interface ExerciseCardProps {
